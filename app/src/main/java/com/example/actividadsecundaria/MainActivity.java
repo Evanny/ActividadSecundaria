@@ -22,4 +22,10 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("nombre", et1.getText().toString());
         startActivity(i);
     }
+
+    public void irURL(View view){
+        Intent i=new Intent(this, navegador.class);
+        i.putExtra("url", et1.getText().toString());
+        startActivity(i);
+    }
 }
